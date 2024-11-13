@@ -1,1 +1,19 @@
+Key Concept 
+Key concepts and technological advancements for enhancing the security of business networks, devices, and systems will be covered in this section. 
+Infrastructure Considerations
+Device placement: arranging servers, network appliances, and end-user devices in a way that maximizes security and reduces attack surface. 
+Security Zones: To improve network segmentation and threat containment, the infrastructure should be divided into discrete security zones with restricted access. 
+Attack Surface: Identifying and minimizing the exposed points where an attacker could potentially gain unauthorized access to infrastructure. 
+Connectivity Failure Modes: Building the infrastructure to securely manage connectivity failures, such as when it fails to open or close.
+Device Placement
+Place important devices, including servers and network appliances, insecure physical locations with controlled access.  
+To avoid unwanted access, place network access points—such as switches and wireless access points—in locations that are simple to monitor.
+To restrict the impact of a branch and reduce the attack surface, distribute devices across multiple security zones.
+Security Zones
+Perimeter Zone: is the outermost layer of protection, meant to safeguard the company from external threats. Includes firewalls, intrusion prevention systems (IPS/IDS), and other network appliances. 
+Internal Zone: The internal network where daily company operations occur. This zone frequently features tougher access controls and micro-segmentation to restrict movement.
+DMZ Zone: A neutralized area between internal and external networks that hosts publicly accessible servers and services. 
+Attack Surfaces
+The attack surface of a business infrastructure includes all potential access points and vulnerabilities that malicious parties could exploit. Minimizing the attack surface is crucial to improving security. This includes safeguarding external-facing systems, monitoring network traffic, and installing strong access controls to prevent unwanted access to key resources. 
+
 

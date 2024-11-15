@@ -15,5 +15,50 @@ Internal Zone: The internal network where daily company operations occur. This z
 DMZ Zone: A neutralized area between internal and external networks that hosts publicly accessible servers and services. 
 Attack Surfaces
 The attack surface of a business infrastructure includes all potential access points and vulnerabilities that malicious parties could exploit. Minimizing the attack surface is crucial to improving security. This includes safeguarding external-facing systems, monitoring network traffic, and installing strong access controls to prevent unwanted access to key resources. 
+Connectivity Failure Modes
+Fail-Open: In this situation, even in the event that a security control fails, the system allow access to continue operating. While there may be a higher risk, business continuity is maintained. 
+Fail-Closed: This method puts security above availability by blocking all access in the event that a security control fails. Although this reduces risk, corporate activities may be disrupted.
+Graceful Degradation: By balancing security and availability, designing for graceful degradation guarantees that the system may continue to function with diminished functionality in the event that a security component fails. 
+Network Appliances 
+Jump Server - is a secure gateway that allows you to access and manage other networked devices. It offers a regulated entry point, which improves security and auditing. 
+Proxy Server - Functions as an intermediate, managing and filtering network traffic. Increases security by controlling access, monitoring activity, and safeguarding internal systems. 
+IPS/IDS - An Intrusion Prevention System (IPS) and Intrusion Detection System (IDS) monitor network traffic for signals of malicious activity, changing and responding to mitigate threats. 
+Load Balancer - Distribute network traffic across numerous servers, increasing performance and availability. Improves security by block single points of failure. 
+Jump Sever
+The jump server operates as a secure entry point, preventing direct access to important systems and networks. It may be used to set up VPN connections, enable multi-factor authentication, and log and monitor all user activity.
+Proxy Server
+A proxy server resides between the client and the internet. It can analyze and filter traffic, preventing potentially dangerous content from reaching the internal network. This reduces the attack surface and prevents direct exposure to external threats. It receives requests from clients, forwards them to their designated destination, and returns the response to the clients. 
+Intrusion Prevention System(IPS)/ Intrusion Detection System(IDS)
+Monitoring and Detection - IPS and IDS systems constantly monitor network traffic and system activities in order to detect and prevent any threats or intrusions.  
+Threat response - When an intrusion prevention system (IPS) recognizes a threat, it can take automatic action to mitigate or prevent the assault. IDS systems are primarily concerned with detection and alerting. 
+Advanced Analytics - IPS and IDS use machine learning and behavioral analysis to detect complex, multi-stage threats that standard security technologies may overlook.  
+Placement and Integration - These systems are often put inline on the network or at critical choke points to inspect all traffic that passes through.  
+Load Balancer
+A load balancer is a crucial network appliance that plays an important role in protecting company infrastructure. It distributes traffic across numerous servers to ensure scalability, high availability, and peak performance. It keeps servers from overcrowding and improves response time. 
 
+Sensors
+Sensors are important in enterprise infrastructure security because they allow for real-time monitoring and detection. Perimeter sensors protect the network's edge, internal sensors monitor infrastructure activity, and endpoint sensors secure specific devices and systems. This facilitates the identification and response to a broader spectrum of security threats. 
+Port Security
 
+802.1x Authentication - Provides port-based network access control by authenticating and approving devices prior to giving network access ensuring only authorized entities can access secure resources. This provides a centralized control and mitigates unauthorized access. 
+Extensible Authentication Protocol (EAP) - EAP specifies a framework for authentication methods, allowing for flexible and safe authentication across enterprise networks. It is frequently used in 802.1X port-based network control to improve security for enterprise networks. 
+Firewall Types
+Web Application Firewall (WAF) - The Web Application Firewall (WAF) monitors and filters web traffic to protect web applications against attack vectors like SQL injection and cross-site scripting (XSS). 
+Next-Generation Firewalls (NGFWs) go beyond traditional packet filtering to include application-level inspection, user or application identification, and intrusion prevention. This sophisticated functionality enables greater visibility and control over network traffic. 
+Unified Threat Management (UTM) - A UTM firewall combines numerous security functions, such as antivirus, VPN, IPS, and content filtering, into a single device. This integrated strategy streamlines management while still providing comprehensive company protection. 
+Layer 4 vs. Layer 7 Firewalls - Layer 4 firewalls are transport layer firewalls that focus on ports and protocols. Layer 7 firewalls evaluate application-level data, allowing for more advanced controls depending on content, users, and application activity. 
+
+Web Application Firewall (WAF)
+WAF monitors and filters  HTTP traffic to protect web applications from various threats. WAFs are essential for securing web applications, as they provide a multi-layered defense against common web vulnerabilities. They can be deployed as hardware, software, or cloud-based solutions, offering flexible implementation options for enterprise environments. 
+Unified Threat Management (UTM) 
+UTM equipment give a unified approach to network security, making management easier and lowering overall complexity. The integrated security tools combine to provide tiered protection against threats ranging from malware to network-based attacks. To improve network security and speed, UTM solutions frequently contain advanced capabilities such as content filtering, application control, and bandwidth management.  
+Next Generation Firewall (NGFW) 
+Advanced Threat Protection combines intrusion prevention, application control, and sophisticated threat detection to offer full protection against modern cyber threats.
+Granular Application Control enables administrators to define exact security controls depending on application usage. NGFWs also collaborate with identity providers to link network activities to particular users, providing user-based access controls and threat detection. 
+Layer 4 Firewall 
+These stateful firewalls monitor network connections, permitting valid traffic while restricting unauthorized traffic based on network and transport layer information. Layer 4 firewalls are designed for speed, processing massive amounts of data with little latency, making them ideal for high-throughput conditions.  
+Layer 7 Firewall
+Layer 7 firewalls, often known as application level firewalls, operate at the OSI model's highest level, the application layer. It examines the content and context of network traffic, allowing it to make more advanced security judgments than lower-level firewalls.
+Layer 7 firewalls may inspect and filter online traffic, identify and prevent web-based attacks, and impose application-specific policies. This granular control is critical for safeguarding modern web-based apps and services. 
+Conclusion
+Finally, safeguarding enterprise infrastructure requires a complete strategy that takes into account device placement, security zones, attack surface, and connectivity failure modes. Using a variety of network equipment and port security techniques can assist reduce risks and improve overall security posture. 
